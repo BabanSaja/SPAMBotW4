@@ -326,7 +326,7 @@ print('subscribe channel gw dulu')
 os.system('xdg-open https://youtube.com/@brayenhack8272')        
 def main():
     os.system("cls") # Clear Terminal agar CMD berwarna
-    autoketik(f"Selamat datang di {merah}SPAMBotW44")
+    autoketik(f"Selamat datang di {merah}SPAMBotW4")
     print(f"""{kuning}Author      : {hijau}Lufzy Kull
 {kuning}Github      : {merah}gada
 {kuning}Instagram   : {biru}gada""")
