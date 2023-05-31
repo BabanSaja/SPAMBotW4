@@ -1,4 +1,4 @@
-# SPAMBotW4
+#SPAMBotW44
 Instalasi Script
 >pkg update
 >
