@@ -278,33 +278,33 @@ def jam(nomor): # Don't Remove Code !!!!
             except requests.exceptions.ConnectionError:
                 print("")
                 autoketik("--Fail to establish a new connection--")
-                time.sleep(1000) # Tunda 1000 detik
+                time.sleep(10) # Tunda 10 detik
                 rto = 1
 
             #https://urllib3.readthedocs.io/en/stable/reference/urllib3.exceptions.html
             except urllib3.exceptions.NewConnectionError: # Error Handling 2 ketika masih terjadi error berlebihan
                 print("")
                 autoketik("--Fail to establish a new connection--")
-                time.sleep(1000) # Tunda 1000 detik
+                time.sleep(10) # Tunda 10 detik
                 rto = 1
 
             except TimeoutError : # HTTPSConnectionPool() A Connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
                 print("")
                 autoketik("--A Connection attempt failed because the connected party did not properly respond after a period of time--")
-                time.sleep(1000) # Tunda 1000 detik
+                time.sleep(10) # Tunda 10 detik
                 rto = 1
 
             except urllib3.exceptions.ProtocolError : # HTTPSConnectionPool() A Connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
                 print("")
                 autoketik("--A Connection attempt failed because the connected party did not properly respond after a period of time--")
-                time.sleep(1000) # Tunda 1000 detik
+                time.sleep(10) # Tunda 10 detik
                 rto = 1
 
             except KeyboardInterrupt: # Error Handling Ketika user menekan tombol CTRL + C atau Interrupt Terminal
                 print("")
                 tanya(nomor)
         if rto==1:
-            time.sleep(80) # Jika sudah error RTO maka tunda dulu proses selama 80 detik
+            time.sleep(10) # Jika sudah error RTO maka tunda dulu proses selama 10 detik
             start(nomor,1)
         else:
             start(nomor,1) # Fungsi start() dengan membawa parameter (nomor target, flag 1 yang berarti bukan perama kali masuk kedalam fungsi start())
@@ -317,8 +317,8 @@ def start(nomor,x): # Def Untuk Start Tools
         jam(nomor)
     else:
         print("")
-        autoketik("--reboot wait 20 second--")
-        time.sleep(15) # Tunda 20 detik
+        autoketik("--reboot wait 10 second--")
+        time.sleep(15) # Tunda 10 detik
         os.system("cls") # Clear Terminal
         autoketik(f"{merah}Mengulang Spam ke Nomor : {nomor}.....{hijau}") # Flag dimana program berjalan
         jam(nomor)
@@ -326,10 +326,10 @@ print('subscribe channel gw dulu')
 os.system('xdg-open https://youtube.com/@brayenhack8272')        
 def main():
     os.system("cls") # Clear Terminal agar CMD berwarna
-    autoketik(f"Selamat datang di {merah}SPAMBotW4")
-    print(f"""{kuning}Author      : {hijau}BRAYEN HACK
-{kuning}Github      : {merah}github.com/BrayenHack
-{kuning}Instagram   : {biru}instagram.com/BrayenHack""")
+    autoketik(f"Selamat datang di {merah}SPAMBotW44")
+    print(f"""{kuning}Author      : {hijau}Lufzy Kull
+{kuning}Github      : {merah}gada
+{kuning}Instagram   : {biru}gada""")
     # Contoh : 089508226367
     print(nomor := input(f"{hijau}Masukkan Nomor Target: {putih}")) # Walrus Operator untuk inputan Nomor Target
     start(nomor,0) # Memulai Tools
